@@ -21,7 +21,7 @@ makeCacheMatrix <- function(x = matrix()) {
 ## otherwise it will recalculate the inverse.
 ## Note in makeCacheMatrix if the matrix is changed the invese value is set to NULL.
 
-cacheSolve <- function(x) {
+cacheSolve <- function(x,...) {
     ## Return a matrix that is the inverse of 'x'
     m <- x$getInv()
     if(!is.null(m)) {
